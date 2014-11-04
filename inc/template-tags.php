@@ -67,8 +67,15 @@ if ( ! function_exists( 'iamronald_posted_on' ) ) :
  */
 function iamronald_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+	$update_string = '';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+		$update_string = 'last updated <span><a href="' . esc_url( get_permalink() ) . '" rel="bookmark"><time class="updated" datetime="%3$s">%4$s</time></a></span> ';
+		$update_string = sprintf( $update_string,
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() ),
+			esc_attr( get_the_modified_date( 'c' ) ),
+			esc_html( get_the_modified_date() )
+		);
 	}
 
 	$time_string = sprintf( $time_string,
@@ -78,9 +85,15 @@ function iamronald_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
+	$cats = get_the_category();
+	$categories = array();
+	foreach($cats as $cat) { 
+		$categories[] = '<span><a href="' . esc_url( get_category_link($cat->term_id) ) . '" rel="category tag">' . $cat->name . '</a></span>';
+	}
+
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'iamronald' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		_x( 'posted on %s', 'post date', 'iamronald' ),
+		'<span><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a></span> ' . $update_string
 	);
 
 	$byline = sprintf(
@@ -88,8 +101,38 @@ function iamronald_posted_on() {
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
+	$posted_in = sprintf(
+		_x( 'in %s', 'post category', 'iamronald' ),
+		implode(', ', $categories) . ' ' 
+	);
 
+	$with_num_comments = sprintf(
+		_x( 'with %s', 'number of replies', 'iamronald' ),
+		'<span><a href="' . esc_url( get_comments_link() ) . '" rel="comments">' . iamronald_get_comments_number() . '</a></span> '
+	);
+
+	echo $byline . $posted_on . $posted_in . $with_num_comments;
+
+}
+endif;
+
+if ( ! function_exists( 'iamronald_get_comments_number' ) ) :
+/**
+ * Returns the total number of comments, Trackbacks, and Pingbacks for the current post.
+ */
+function iamronald_get_comments_number($zero = 'No Replies', $one = '1 Reply', $more = '% Replies') {
+	$num_comments = get_comments_number(); // get_comments_number returns only a numeric value
+	if ( comments_open() ) {
+		if ( $num_comments == 0 ) {
+			return __($zero);
+		} elseif ( $num_comments > 1 ) {
+			return __(str_replace('%', $num_comments, $more));
+		} else {
+			return __($one);
+		}
+	} else {
+		return  __('No Comments Allowed');
+	}
 }
 endif;
 
@@ -115,7 +158,7 @@ function iamronald_entry_footer() {
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'iamronald' ), __( '1 Comment', 'iamronald' ), __( '% Comments', 'iamronald' ) );
+		comments_popup_link( __( 'Leave a reply', 'iamronald' ), __( '1 Reply', 'iamronald' ), __( '% Replies', 'iamronald' ) );
 		echo '</span>';
 	}
 

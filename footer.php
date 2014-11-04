@@ -8,17 +8,28 @@
  */
 ?>
 
-	</div><!-- #content -->
+		</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'iamronald' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'iamronald' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'iamronald' ), 'Iamronald', '<a href="http://iamronald.com/" rel="designer">Ronald A. Richardson</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		<footer id="footer" class="site-footer" role="contentinfo">
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="copyright">Copyright <?=date('Y')?> <a href="<?=get_bloginfo('url')?>"><?=get_bloginfo('name')?></a>. All Rights Reserved.</p>
+				</div>
+				<div class="col-xs-6">
+					<ul>
+						<li><a href=""><img src="<?php bloginfo('template_directory'); ?>/assets/img/github.png"></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_directory'); ?>/assets/img/twitter.png"></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_directory'); ?>/assets/img/soundcloud.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer><!-- #colophon -->
+	</div><!-- .container -->
+</div> <!-- #main -->
 
+<div id="sidenav">
+	<?php get_sidebar(); ?>
+</div>
 <?php wp_footer(); ?>
 
 </body>

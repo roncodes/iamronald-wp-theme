@@ -413,13 +413,13 @@ body.single #content article.post {
 #content article .entry-content h5 { font-size: 1em; }
 #content article .entry-content h6 { font-size: 0.75em; }
 /* Post Content (Preformatting & Code) */
+#content article .entry-content code,
 #content article .entry-content pre {
-	background: #171717;
-	padding: 3px;
-	color: #AC91FF;
-}
-
-#content article .entry-content code {
+	background: #0D0D0D;
+	padding: 5px;
+	color: #76FF51;
+	display: inline;
+	font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
 }
 /* Post Content (Tables) */
 #content article .entry-content table {

@@ -163,6 +163,9 @@ nav.primary ul li {
 	margin-right: 50px;
 	line-height: 14px;
 }
+nav.primary ul li.current_page_item a {
+	border-bottom: 2px solid #AC91FF;
+}
 nav.primary ul li a {
 	color: #fff;
 	font-size: 14px;

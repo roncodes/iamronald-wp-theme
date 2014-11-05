@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    prettyPrint();
     $('#footer li a img').hover(function() {
     	$(this).addClass('animated bounce');
     }).mouseout(function() {

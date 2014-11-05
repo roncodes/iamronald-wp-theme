@@ -98,18 +98,20 @@ get_header(); ?>
 					<hr>
 					<h4 class="subject">Education</h4>
 					<!-- uat -->
-					<div class="pull-left">
-						<h3 class="title">Bachelors in Robotics and Embedded Systems</h3>
-						<h3 class="sub-title">University of Advancing Technology</h3>
+					<div class="experience">
+						<div class="pull-left">
+							<h3 class="title">Bachelors in Robotics and Embedded Systems</h3>
+							<h3 class="sub-title">University of Advancing Technology</h3>
+						</div>
+						<div class="pull-right">
+							<span class="date">2010</span>
+							<p>Tempe, AZ</p>
+						</div>
+						<div class="clearfix"></div>
+						<p>
+							Studied Robotics and Embedded systems, worked with microcontrollers and other technologies, designed schematics and real world use of robotics. I was also awarded the Ray Kurzweil scholarship for the development of an open source web based OS titled "ZocialNET".
+						</p>
 					</div>
-					<div class="pull-right">
-						<span class="date">2010</span>
-						<p>Tempe, AZ</p>
-					</div>
-					<div class="clearfix"></div>
-					<p>
-						Studied Robotics and Embedded systems, worked with microcontrollers and other technologies, designed schematics and real world use of robotics. I was also awarded the Ray Kurzweil scholarship for the development of an open source web based OS titled "ZocialNET".
-					</p>
 					<!-- end uat -->
 				</div>
 				<div class="skills">

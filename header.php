@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/font-awesome.min.css" type="text/css" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/animate.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/tomorrow-night.css" type="text/css" />
+
 <?php wp_head(); ?>
 </head>
 

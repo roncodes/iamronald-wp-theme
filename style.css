@@ -312,7 +312,6 @@ body.single #content article.post {
 }
 /* Post Content (Spacing) */
 #content article .entry-content p,
-#content article .entry-content pre,
 #content article .entry-content ul,
 #content article .entry-content ol,
 #content article .entry-content dl,
@@ -415,13 +414,9 @@ body.single #content article.post {
 #content article .entry-content h6 { font-size: 0.75em; }
 /* Post Content (Preformatting & Code) */
 #content article .entry-content pre {
-	background: #f7f7f7;
-	font-size: 16px;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	padding: 1.6em;
-	max-width: 100%;
-	overflow: auto;
+	background: #171717;
+	padding: 3px;
+	color: #AC91FF;
 }
 
 #content article .entry-content code {

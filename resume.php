@@ -9,7 +9,6 @@ get_header(); ?>
 		<div class="resume-content">
 			<div class="resume">
 				<div class="info">
-					<h2>Ronald A. Richardson</h2>
 					<h3 class="title">Software Engineer & UI/UX Designer</h3>
 					<p class="blurb">
 						I'm a coder with a passion for developing beautiful web applications that scale. I like to write clean code, and design solid UI/UX. I'm searching for work that engages and challenges me, and opportunities to explore new technologies.
@@ -17,74 +16,84 @@ get_header(); ?>
 					<hr>
 					<h4 class="subject">Experience</h4>
 					<!-- freelance -->
-					<div class="pull-left">
-						<h3 class="title">Web Developer</h3>
-						<h3 class="sub-title">Freelance</h3>
+					<div class="experience">
+						<div class="pull-left">
+							<h3 class="title">Web Developer</h3>
+							<h3 class="sub-title">Freelance</h3>
+						</div>
+						<div class="pull-right">
+							<span class="date">Feb 2006 - Jun 2009</span>
+							<p>Charlotte, NC</p>
+						</div>
+						<div class="clearfix"></div>
+						<p>
+							Worked as a freelance developer with local businesses in Charlotte, NC while in High School. Designed, developed and deployed website and web applications for small businesses and local goverment. Some clients include the Mayor of Huntersville, renowned motivation speaker Tawana, and mega church Newbirth Charlotte. Development included Wordpress, PHP, and Javascript.
+						</p>
 					</div>
-					<div class="pull-right">
-						<span class="date">Feb 2006 - Jun 2009</span>
-						<p>Charlotte, NC</p>
-					</div>
-					<div class="clearfix"></div>
-					<p>
-						Worked as a freelance developer with local businesses in Charlotte, NC while in High School. Designed, developed and deployed website and web applications for small businesses and local goverment. Some clients include the Mayor of Huntersville, renowned motivation speaker Tawana, and mega church Newbirth Charlotte. Development included Wordpress, PHP, and Javascript.
-					</p>
 					<!-- end freelance -->
 					<!-- usmcr -->
-					<div class="pull-left">
-						<h3 class="title">U.S. Marine</h3>
-						<h3 class="sub-title">USMCR</h3>
+					<div class="experience">
+						<div class="pull-left">
+							<h3 class="title">U.S. Marine</h3>
+							<h3 class="sub-title">USMCR</h3>
+						</div>
+						<div class="pull-right">
+							<span class="date">Aug 2008 - Present</span>
+							<p>North America</p>
+						</div>
+						<div class="clearfix"></div>
+						<p>
+							Serving in the United States Marine Corps Reserve honorably. During this time I have participated in several major training missions where I manned the combat operations center, tracking hundreds of Marines and convoys, provided radio support for medivac and supply, making sure each movement reached it's destination.
+						</p>
 					</div>
-					<div class="pull-right">
-						<span class="date">Aug 2008 - Present</span>
-						<p>North America</p>
-					</div>
-					<div class="clearfix"></div>
-					<p>
-						Serving in the United States Marine Corps Reserve honorably. During this time I have participated in several major training missions where I manned the combat operations center, tracking hundreds of Marines and convoys, provided radio support for medivac and supply, making sure each movement reached it's destination.
-					</p>
 					<!-- end usmcr -->
 					<!-- fsm -->
-					<div class="pull-left">
-						<h3 class="title">Software Developer</h3>
-						<h3 class="sub-title">Full Speed Marketing</h3>
+					<div class="experience">
+						<div class="pull-left">
+							<h3 class="title">Software Developer</h3>
+							<h3 class="sub-title">Full Speed Marketing</h3>
+						</div>
+						<div class="pull-right">
+							<span class="date">Jul 2011 - Jan 2012</span>
+							<p>Tempe, AZ</p>
+						</div>
+						<div class="clearfix"></div>
+						<p>
+							Developed several applications for various companies, and in house apps. Some of the work includes iphone app, game development, large data import and transfer web application that utilized workers and several AWS EC2 instances to move data and report real time transfer progress, an open source spintax class in Python and PHP, and a desktop syntax highlighter progream for Spintax (a marketing language for creating semi unique content). I contributed my skills to the development of the Plivo PHP SDK, and ultimatley developed a call tracking application using both Twilio and Plivo API.
+						</p>
 					</div>
-					<div class="pull-right">
-						<span class="date">Jul 2011 - Jan 2012</span>
-						<p>Tempe, AZ</p>
-					</div>
-					<div class="clearfix"></div>
-					<p>
-						Developed several applications for various companies, and in house apps. Some of the work includes iphone app, game development, large data import and transfer web application that utilized workers and several AWS EC2 instances to move data and report real time transfer progress, an open source spintax class in Python and PHP, and a desktop syntax highlighter progream for Spintax (a marketing language for creating semi unique content). I contributed my skills to the development of the Plivo PHP SDK, and ultimatley developed a call tracking application using both Twilio and Plivo API.
-					</p>
 					<!-- end fsm -->
-					<!-- fsm -->
-					<div class="pull-left">
-						<h3 class="title">Software Developer</h3>
-						<h3 class="sub-title">VUURR</h3>
+					<!-- vuurr -->
+					<div class="experience">
+						<div class="pull-left">
+							<h3 class="title">Software Developer</h3>
+							<h3 class="sub-title">VUURR</h3>
+						</div>
+						<div class="pull-right">
+							<span class="date">Feb 2012 - Dec 2012</span>
+							<p>Chandler, AZ</p>
+						</div>
+						<div class="clearfix"></div>
+						<p>
+							Developed several applications for various companies, some companies include Infusionsoft,  and Shamrock Farms. I worked as sole developer for many projects including web based dashboard to report analytical data, facebook apps, and wordpress development. Used several API's such as Google, Facebook, Sendible, Twitter, and Authority Labs. Rewrote the official Infusionsoft Python SDK from over 3k lines of code into a <a href="http://goo.gl/k9ZbJ8">light 27 line code library</a>.
+						</p>
 					</div>
-					<div class="pull-right">
-						<span class="date">Feb 2012 - Dec 2012</span>
-						<p>Chandler, AZ</p>
-					</div>
-					<div class="clearfix"></div>
-					<p>
-						Developed several applications for various companies, some companies include Infusionsoft,  and Shamrock Farms. I worked as sole developer for many projects including web based dashboard to report analytical data, facebook apps, and wordpress development. Used several API's such as Google, Facebook, Sendible, Twitter, and Authority Labs. Rewrote the official Infusionsoft Python SDK from over 3k lines of code into a <a href="http://goo.gl/k9ZbJ8">light 27 line code library</a>.
-					</p>
-					<!-- end fsm -->
+					<!-- end vuurr -->
 					<!-- tc -->
-					<div class="pull-left">
-						<h3 class="title">Software Engineer</h3>
-						<h3 class="sub-title">Tango Card, Inc</h3>
+					<div class="experience">
+						<div class="pull-left">
+							<h3 class="title">Software Engineer</h3>
+							<h3 class="sub-title">Tango Card, Inc</h3>
+						</div>
+						<div class="pull-right">
+							<span class="date">Feb 2012 - Dec 2012</span>
+							<p>Seattle, WA</p>
+						</div>
+						<div class="clearfix"></div>
+						<p>
+							Wrote essential applications, maintained current codebase, and solved complex issues. While at Tango Card I developed there entire back-end content management system that uses a RESTful interface to feed updated pages, layout styles to the outdated Zend Framework based front-end application. The CMS is fully featured including it's own S3 Manager for assets, a syntax highlighter and handlebar styled template system built in Grails. Contributed a majority of the effort to redesign and revampe the entire front-end website from PSD to production. Designed and developed the front-end and parts of the backe-end component of Tango Card's star platform "Rewards Genius" which now serves many major companies including Twitter, Citrux, Salesforce, and more.
+						</p>
 					</div>
-					<div class="pull-right">
-						<span class="date">Feb 2012 - Dec 2012</span>
-						<p>Seattle, WA</p>
-					</div>
-					<div class="clearfix"></div>
-					<p>
-						Wrote essential applications, maintained current codebase, and solved complex issues. While at Tango Card I developed there entire back-end content management system that uses a RESTful interface to feed updated pages, layout styles to the outdated Zend Framework based front-end application. The CMS is fully featured including it's own S3 Manager for assets, a syntax highlighter and handlebar styled template system built in Grails. Contributed a majority of the effort to redesign and revampe the entire front-end website from PSD to production. Designed and developed the front-end and parts of the backe-end component of Tango Card's star platform "Rewards Genius" which now serves many major companies including Twitter, Citrux, Salesforce, and more.
-					</p>
 					<!-- end tc -->
 					<hr>
 					<h4 class="subject">Education</h4>

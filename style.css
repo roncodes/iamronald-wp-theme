@@ -395,10 +395,10 @@ body.single #content article.post {
 }
 /* Post Content (Divider) */
 #content hr {
-	background-color: #f5f5f5;
+	background-color: #201C28;
 	border: 0;
-	height: 3px;
-	margin: 7% 0;
+	height: 2px;
+	margin: 25px 0;
 }
 /* Post Content (Headings) */
 #content article .entry-content h1, h2, h3, h4, h5, h6 {
@@ -1195,7 +1195,7 @@ body.author #content .avatar {
 .resume .title {
 	color: #888;
 	padding-bottom: 13px;
-	font-size: 19px;
+	font-size: 30px;
 	line-height: 1.5;
 	margin: 0;
 }
@@ -1211,8 +1211,13 @@ body.author #content .avatar {
 	width:70%;
 	height:100%;
 	float:left;
-	border-right:1px #2B2B2B solid;
-	padding:30px;
+	padding-right: 10px;
+}
+.resume .info .experience {
+	margin-bottom: 30px;
+}
+.resume .info .experience .title {
+	font-size: 20px;
 }
 .resume .skills {
 	width:30%;
@@ -1232,9 +1237,11 @@ body.author #content .avatar {
 	margin-bottom: -5px;
 }
 .resume .skills .sblurb {
-	font-size:14px;
-	margin-top:-15px;
-	padding-bottom:5px;
+	font-size: 14px;
+	margin-top: -15px;
+	padding-bottom: 5px;
+	line-height: 20px;
+	margin-bottom: 20px;
 }
 .resume .skills .getintouch {
 	padding-left: 0px;

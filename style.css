@@ -416,8 +416,9 @@ body.single #content article.post {
 #content article .entry-content code {
 	background: #0D0D0D;
 	padding: 5px;
-	color: #76FF51;
+	color: #AC91FF;
 	display: inline;
+	font-size: 16px;
 	font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
 }
 #content article .entry-content pre {

@@ -420,7 +420,12 @@ body.single #content article.post {
 	display: inline;
 	font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
 }
-#content article .entry-content pre {}
+#content article .entry-content pre {
+	background: #fff;
+	border-radius: 0px;
+	padding: 15px;
+	font-size: 14px;
+}
 /* Post Content (Tables) */
 #content article .entry-content table {
 	width: 100%;

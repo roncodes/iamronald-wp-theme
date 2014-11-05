@@ -188,6 +188,7 @@ nav.primary ul li a:hover {
 /* page */
 body.page #content article .entry-header,
 body.page #content article .entry-content,
+body.page #content article .entry-footer,
 body.page #content article .entry-header h1.entry-title,
 body.page #content article .entry-header h2.entry-title  {
 	padding-left: 0px !important;

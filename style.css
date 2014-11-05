@@ -425,6 +425,8 @@ body.single #content article.post {
 	border-radius: 0px;
 	padding: 15px;
 	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 /* Post Content (Tables) */
 #content article .entry-content table {

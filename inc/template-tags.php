@@ -166,6 +166,39 @@ function iamronald_entry_footer() {
 }
 endif;
 
+if ( ! function_exists( 'iamronald_comment' ) ) :
+/**
+ * Comment Style
+ */
+function iamronald_comment($comment, $args, $depth) {
+	$GLOBALS['comment'] = $comment;
+	extract($args, EXTR_SKIP);
+	if ( 'div' == $args['style'] ) {
+		$tag = 'div';
+		$add_below = 'comment';
+	} else {
+		$tag = 'li';
+		$add_below = 'div-comment';
+	}
+	?>
+	<<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
+		<article class="clearfix" itemprop="comment" itemscope="itemscope" itemtype="http://schema.org/UserComments">
+			<?php echo get_avatar($comment, 64); ?>	        
+	        <div class="comment-author">
+				<p class="vcard" itemprop="creator" itemscope="itemscope" itemtype="http://schema.org/Person">
+				<?php printf( __( '<cite class="fn" itemprop="name">%s</cite>' ), get_comment_author_link() ); ?>
+				<?php printf( __('<time itemprop="commentTime" datetime="2014-06-13T20:43:42+00:00">%1$s at %2$s</time>'), get_comment_date(),  get_comment_time() ); ?>
+				<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>		            					</p>
+			</div>
+			<div class="comment-content" itemprop="commentText">
+				<?php comment_text(); ?>
+			</div>
+		</article>
+	</<?php echo $tag ?>>
+	<?
+}
+endif;
+
 /**
  * Returns true if a blog has more than 1 category.
  *

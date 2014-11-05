@@ -9,13 +9,12 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="content" class="site-content">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
+			<header class="entry-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+				<h1 class="entry-title" itemprop="headline">
 					<?php
 						if ( is_category() ) :
 							single_cat_title();
@@ -72,7 +71,7 @@ get_header(); ?>
 					// Show an optional term description.
 					$term_description = term_description();
 					if ( ! empty( $term_description ) ) :
-						printf( '<div class="taxonomy-description">%s</div>', $term_description );
+						printf('<div class="entry-excerpt" itemprop="text">%s</div>', $term_description);
 					endif;
 				?>
 			</header><!-- .page-header -->
@@ -98,8 +97,6 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+	</div><!-- #content -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -27,10 +27,11 @@
 	</div><!-- .container -->
 </div> <!-- #main -->
 
-<div id="sidenav">
+<div id="sidenav" data-state="closed">
 	<?php get_sidebar(); ?>
 </div>
 <?php wp_footer(); ?>
-
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/iamronald.js" type="text/javascript"></script>
 </body>
 </html>

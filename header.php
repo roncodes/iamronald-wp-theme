@@ -16,13 +16,13 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/font-awesome.min.css" type="text/css" />
-
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/animate.css" type="text/css" />
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 	<div id="main">
-		<button id="sidenav-toggle" class="btn btn-lg"><i class="fa fa-bars"></i></button>
+		<button id="sidenav-toggle"><i class="fa fa-bars"></i></button>
 		<div class="container">
 			<header role="banner">
 				<div class="row">

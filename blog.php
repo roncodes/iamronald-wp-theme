@@ -9,7 +9,7 @@ $args = array(
 );
 query_posts( $args );
  
-$wp_query->is_archive = true;
+$wp_query->is_archive = false;
 $wp_query->is_home = false;
 
 get_header(); ?>

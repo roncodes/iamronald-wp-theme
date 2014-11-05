@@ -32,6 +32,7 @@
 </div>
 <?php wp_footer(); ?>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/prettify/prettify.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/iamronald.js" type="text/javascript"></script>
 </body>
 </html>

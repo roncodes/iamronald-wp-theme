@@ -21,7 +21,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> onload="prettyPrint()">
 	<div id="main">
 		<button id="sidenav-toggle"><i class="fa fa-bars"></i></button>
 		<div class="container">

@@ -17,9 +17,10 @@
 				</div>
 				<div class="col-xs-6">
 					<ul>
-						<li><a href=""><img src="<?php bloginfo('template_directory'); ?>/assets/img/github.png"></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_directory'); ?>/assets/img/twitter.png"></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_directory'); ?>/assets/img/soundcloud.png"></a></li>
+						<li><a href="http://github.com/theprestig3"><img src="<?php bloginfo('template_directory'); ?>/assets/img/github.png"></a></li>
+						<li><a href="http://twitter.com/ronislegend"><img src="<?php bloginfo('template_directory'); ?>/assets/img/twitter.png"></a></li>
+						<li><a href="http://instagram.com/_theprestig3"><img src="<?php bloginfo('template_directory'); ?>/assets/img/instagram.png"></a></li>
+						<li><a href="http://soundcloud.com/ronald-a-richardson"><img src="<?php bloginfo('template_directory'); ?>/assets/img/soundcloud.png"></a></li>
 					</ul>
 				</div>
 			</div>

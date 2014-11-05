@@ -12,6 +12,7 @@ get_header(); ?>
 					<h3 class="title">Software Engineer & UI/UX Designer</h3>
 					<p class="blurb">
 						I'm a coder with a passion for developing beautiful web applications that scale. I like to write clean code, and design solid UI/UX. I'm searching for work that engages and challenges me, and opportunities to explore new technologies.
+						<a href="<?=bloginfo('url')?>/work">Click here to view some of my work</a>
 					</p>
 					<hr>
 					<h4 class="subject">Experience</h4>

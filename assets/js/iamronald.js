@@ -7,11 +7,12 @@ $(document).ready(function() {
     $('#sidenav-toggle').click(function(e) {
     	e.preventDefault();
     	if($('#sidenav').data('state') == 'closed') {
-    		$('#sidenav').animate({'right': '0px', 'opacity': '1'}, 100);
+    		$('#sidenav').animate({'right': '0px'}, 100);
     		$('#sidenav').data('state', 'open');
     	} else {
-    		$('#sidenav').animate({'right': '-400px', 'opacity': '0'}, 100);
+    		$('#sidenav').animate({'right': '-400px'}, 100);
     		$('#sidenav').data('state', 'closed');
     	}
     });
+    $('.search-submit').replaceWith('<button type="submit" class="clear-btn search-submit"><i class="fa fa-search"></i></button>');
 });

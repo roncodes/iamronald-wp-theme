@@ -57,7 +57,7 @@ body {
 	font-size: 18px;
 	height: 100%;
 	line-height: 36px;
-	background: #181818;
+	background: #292635;
 	/*background: #272822;*/
 	color: #fff;
 	overflow-x: hidden;
@@ -89,6 +89,12 @@ div.logo {
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: -9px;
+}
+div.logo a {
+	color: #fff;
+}
+div.logo a:hover {
+	color: #fff;
 }
 header, main, footer, aside, section, .clearfix {
 	*zoom: 1;
@@ -138,7 +144,7 @@ header:after, main:after, footer:after, aside:after, section:after,
 	z-index: 9999;
 	top: 0;
 	right: 0;
-	margin: 5px 27px;
+	margin: 6px 20px;
 	color: #fff;
 	background: transparent;
 	border: 0px;

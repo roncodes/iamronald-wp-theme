@@ -27,7 +27,7 @@
 			<header role="banner">
 				<div class="row">
 					<div class="col-xs-4">
-						<div class="logo"><?=get_bloginfo('name')?></div>
+						<div class="logo"><a href="/"><?=get_bloginfo('name')?></a></div>
 					</div>
 					<div class="col-xs-8">
 						<nav class="primary">

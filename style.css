@@ -1175,4 +1175,94 @@ body.author #content .avatar {
 	margin: 12px 35px 0 0;
 	border-radius: 35px;
 }
-
+/* resume styles */
+.resume-content {
+	height:100%;
+	display: block;
+	position: relative;
+	color:#fff;
+}
+.resume-content a {
+	color:#fff;
+	text-decoration: underline;
+}
+.resume-content a:hover {
+	color: #fff;
+}
+.resume {
+	height:100%;
+}
+.resume .title {
+	color: #888;
+	padding-bottom: 13px;
+	font-size: 19px;
+	line-height: 1.5;
+	margin: 0;
+}
+.resume .sub-title {
+	color: #DBDBDB;
+	padding-bottom: 5px;
+	font-size: 17px;
+	line-height: 1.5;
+	/* margin: 0; */
+	margin-top: -10px;
+}
+.resume .info {
+	width:70%;
+	height:100%;
+	float:left;
+	border-right:1px #2B2B2B solid;
+	padding:30px;
+}
+.resume .skills {
+	width:30%;
+	height:100%;
+	float:left;
+	background: #AC91FF;
+	padding:20px;
+}
+.resume .skills .subject {
+	font-size: 28px;
+	color: #181818;
+}
+.resume .skills .sub-title {
+	color: #292828;
+	font-size:19px;
+	line-height: 1.7;
+	margin-bottom: -5px;
+}
+.resume .skills .sblurb {
+	font-size:14px;
+	margin-top:-15px;
+	padding-bottom:5px;
+}
+.resume .skills .getintouch {
+	padding-left: 0px;
+}
+.resume .skills .getintouch li {
+	list-style:none;
+	min-height: 35px;
+	margin-bottom: 11px;
+}
+.resume .skills .getintouch li a {
+	text-decoration: none;
+}
+.resume .skills .getintouch li span {
+	font-size: 16px;
+	background: #181818;
+	float: left;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin: -5px 17px 0 0;
+}
+.resume .subject {
+	font-size: 23px;
+	color: #C3B0FF;
+}
+.resume hr {
+	border: 1px rgba(54, 54, 54, 0.67) solid;
+	margin:0px;
+}

@@ -88,13 +88,14 @@ div.logo {
 	font-size: 25px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-top: -9px;
+	margin-top: -10px;
 }
 div.logo a {
 	color: #fff;
 }
 div.logo a:hover {
 	color: #fff;
+	text-decoration: none;
 }
 header, main, footer, aside, section, .clearfix {
 	*zoom: 1;

@@ -1,6 +1,6 @@
 <?php
 /**
- * TTemplate Name: Page w/ No Title
+ * The template used for displaying page content in page.php
  *
  * @package Iamronald
  */
